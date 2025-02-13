@@ -30,3 +30,9 @@ function Var(){
     )
 }
 export default Var
+
+// =================props drilling ========
+// pre written codes
+// pre written codes with 
+// diffrence bertween library and framework
+
