@@ -1,18 +1,14 @@
 
 // import './App.css'
 
-import Child1 from "./Child1"
-
-
+// import Child1 from "./Child1"
+import Array from "./Array"  
+import State from "./Component/Bg"
 function App() {
 
   return (
   <>
-
-
-  
-   <Child1 age ={25}/>
-   <Child2 name={"abhinav"}></Child2>
+<State/>
   </>
   
   )
