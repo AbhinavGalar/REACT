@@ -10,6 +10,7 @@ const Child2=()=>{
                 return (
                     <>
                     <h1> my name is {data}</h1>
+                   
                     </>
                 )
             }

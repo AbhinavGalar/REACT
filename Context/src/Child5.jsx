@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { cdata } from "./Child1";
 
+
 const Child5=()=>{
+    let data= useContext(cdata)
     return(
         <>
-        <cdata.Consumer>
+      {/* <h1>my data is {data}</h1> */}
+      <h1>my data is as an object {data.name} and {data.age}</h1>
+
+        
+        </>
+    )
+}
+export default Child5
+
+{/* <cdata.Consumer>
         {
             (data)=>{
                 return (
@@ -15,8 +26,4 @@ const Child5=()=>{
             }
         }
 
-        </cdata.Consumer>
-        </>
-    )
-}
-export default Child5
+        </cdata.Consumer> */}
