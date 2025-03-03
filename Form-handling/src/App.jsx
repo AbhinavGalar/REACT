@@ -1,13 +1,12 @@
 import React from 'react'
-import frm from './assets/Form'
+import Form from './Form'
 
 function App() {
 
   return (
     <>
     <h1>hello</h1>
-                  
-<frm/>
+    <Form/>
     </>
   )
 }
