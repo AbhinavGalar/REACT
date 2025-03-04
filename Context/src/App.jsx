@@ -11,7 +11,7 @@ function App() {
      {/* <cdata.Provider value={name}> */}
       <Child1/>
       {/* <Child5/> */}
-      {/* </cdata.Provider> */}
+      {/* </cdata.Provider> */} 
     </>
   )
 }

@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+    
 const Form =()=>{
     let [Formdata , setFrmdata] = useState({
-       username:"",email:"",password:""  } )
+       username:"",password:"",email:""
+        } )
 
+      let Loginnav= useNavigate()
 
     function inpchange(e){
 const {name,value} =e.target
@@ -16,6 +20,7 @@ const {name,value} =e.target
            console.log(Formdata);
         localStorage.setItem("userdata", JSON.stringify(FormData))
 
+        //  Loginnav('login')
       }
        
 
