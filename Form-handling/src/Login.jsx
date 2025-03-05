@@ -1,24 +1,49 @@
-function Login(){
- let [Logindata , setLogindata] = useState({
-    username:"",password:""
- })
- function lginp(e){
-    let {name,value} = e.target
-    setLogindata({...Logindata,[name]:value})
- }
+import React, { useEffect, useState } from "react"
+import { Navigate, useNavigate } from "react-router-dom"
+
+const Login= () =>{
+     let [logindata , setlogindata]= useState({
+            username:"",password:""
+        })
+
+        let[signdata ,setSign]= useState("")
+
+        let Navigator=useNavigate()
+
+        function Lginp(e){
+            let {name,value} = e.target
+            setlogindata({...logindata,[name]:value})
+
+        }
+        function Loginfinal(e){
+            e.preventDefault()
+            if(signdata.username != logindata.username || signdata.password !=logindata.password){
+                alert("user not found")
+            }
+            else{
+                Navigator('/home')
+            }
+        }
+
+        useEffect(()=>{
+            let signdataa=JSON.parse(localStorage.getItem('userdata'))
+            setSign(signdataa)
+        },[])
     return(
         <>
-        <form action="" onSubmit={loginfinal}>
+        <h1>Login page</h1>
+        <form action="" onSubmit={Loginfinal}>
+            <label htmlFor="">Username</label>
+            <input type="text" name="username" onChange={Lginp}/><br/>
 
-<label htmlFor="">username</label>
-<input type="text" name='username' onChange={lginp} /> <br/>
+            <label htmlFor="">Password</label>
+            <input type="text" name="password" onChange={Lginp}/><br/>
 
-<label htmlFor="">password</label>
-<input type="text" name='password' onChange={lginp} /> <br/>
+            <input type="submit" />
 
-
-</form>
+        </form>
         </>
     )
+
 }
-export default Login
+export default Login
