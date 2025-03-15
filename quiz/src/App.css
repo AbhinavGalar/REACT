@@ -1,0 +1,135 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  overflow-x: hidden;
+}
+
+
+#secondnav .ar3{
+  display: flex;
+  margin-left: 150px;
+}
+#secondnav .ar3 div {
+  /* margin-left: 150px; */
+  margin: 20px;
+}
+#secondnav .ar3 div a{
+  text-decoration: none;
+  color: black;
+}
+#secondnav .ar4{
+  display: flex;
+  margin-left: 950px;
+  margin-top: -55px;
+}
+#secondnav .ar4 div {
+  margin: 20px;
+}
+#secondnav .ar4 div a{
+  color: black;
+  text-decoration: none;
+}
+#secondnav {
+  background-color: #8e6b6b;
+margin-top: 10px;
+}
+/* ================third navvvv */
+#thirdnav .ar5{
+  display: flex;
+  margin-left: 450px;
+  /* justify-content: space-evenly; */
+}
+#thirdnav .ar5 div {
+  /* margin-left: 150px; */
+  margin: 20px;
+}
+#thirdnav .ar5 div a{
+  text-decoration: none;
+  color: black;
+}
+#thirdnav .ar6{
+  display: flex;
+  margin-left: -950px;
+  margin-top: -55px;
+}
+/* #thirdnav .ar5 {
+  background-color: blue;
+  margin-right: -300px;
+} */
+ /*  hero section img */
+#hero .texts .h1{
+  margin-left: 550px;
+  margin-top: -600px;
+  color: var(--text--dark-primary);
+  font-family: Rubik, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.18421;
+}
+
+#hero .texts .h2{
+  margin-left: 450px;
+  color: var(--text--dark-primary);
+  letter-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Rubik, sans-serif;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 1.19118;
+}
+#hero .texts .h3{
+  margin-left: 550px;
+  color: var(--text--dark-primary);
+  letter-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Rubik, sans-serif;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 1.19118;
+}
+#hero .texts .h4{
+  margin-left: 700px;
+}
+#hero .texts .line{
+  margin-left: 450px;
+  margin-right: 400px;
+  margin-top: 20px;
+}
+ 
+#hero .texts .h4{
+  margin-left: 500px;
+  margin-top: 10px;
+}
+#hero .texts .h4{
+  color: var(--text--dark-secondary);
+  font-family: Quicksand, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.36364;
+}
+#hero .button .btn1{
+  margin-left: 550px;
+  margin-top: 20px;
+  color: var(--white);
+  text-align: left;
+  font-family: Quicksand, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  background-color: rgba(128, 0, 128, 0.567);
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+}
+#hero .button .btn2 {
+  margin-left: 850px;
+  /* margin-top: 20px; */
+  background-color: black;
+  width: 100px;
+  margin-top: 50px;
+}
+

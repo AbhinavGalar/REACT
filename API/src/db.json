@@ -1,3 +1,12 @@
 {
-  "student": []
+  "studens": [
+    {
+      "name": "Rajiv",
+      "age": 19,
+      "contact": 546,
+      "city": "Itarsi",
+      "id": "b495"
+    }
+       
+  ]
 }
