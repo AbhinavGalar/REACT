@@ -1,4 +1,5 @@
 import "./App.css";
+import "https://unpkg.com/aos@2.3.1/dist/aos.css" ;
 function Layout() {
   return (
     <>
@@ -93,7 +94,23 @@ function Layout() {
   Learn More 
 </div>
         </article>
+
+        <article class="heroimg">
+          <div><img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5e7b26e6c5e64cfe92_Logo%201.webp"></img></div>
+          <div><img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5e682dcf3e2de72099_Logo%202.webp"></img></div>
+          <div><img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5e7a159d9f46242e32_Logo%203.webp"></img></div>
+          <div><img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5d2ca69d3901188708_Logo%204.webp"></img></div>
+          <div><img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5d83705ec21d936d43_Logo%205.webp"></img></div>
+          <div><img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5d2f95fc561a3ccd53_Logo%206.webp"></img></div>
+<div><img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/676276645873b2dbb8eb7865_Instructure%20Research%20Team%20-%20ESSA%20Level%20IV%20Evidence%20-%202024%20-%202024-11-22.webp"></img></div>
+        </article>
+        <article class="texts1">
+<div class="t1">Trusted by teachers in 90% of U.S. Schools and 150+ countries.</div>
+<div class="t2">Now we support every part of your lesson.<br></br>
+Here’s how it works</div>
+        </article>
       </section>
+
     </>
   )
 }
