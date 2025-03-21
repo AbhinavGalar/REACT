@@ -1,5 +1,5 @@
 import "./App.css";
-
+import Play from "./Play";
 function Layout() {
   return (
     <>
@@ -15,7 +15,7 @@ function Layout() {
             <a href="#">Events</a>
           </div>
           <div>
-            <a href="#">Play & WIN</a>
+            <a href="">Play & WIN</a>
           </div>
           <div>
             <a href="#">SPORTS</a>
@@ -206,6 +206,11 @@ function Layout() {
         </article>
        
       </section>
+       <section>
+        <article>
+          <div><video src="https://cf.quizizz.com/videos/webflow/Intro_1K_Updated.mp4"></video></div>
+        </article>
+       </section>
     </>
   );
 }
