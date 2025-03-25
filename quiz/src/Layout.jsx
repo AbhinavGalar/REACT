@@ -1,41 +1,42 @@
+import { Link, Outlet } from "react-router-dom";
 import "./App.css";
-import Play from "./Play";
 function Layout() {
   return (
     <>
       <section id="secondnav">
         <article class="ar3">
           <div>
-            <a href="#">QUIZ</a>
+            <Link style={{textDecoration:"none"}} to="/quiz">Quiz</Link>
           </div>
           <div>
-            <a href="#">STREAMS</a>
+            <Link style={{textDecoration:"none"}} to="/streams">Streams</Link>
           </div>
           <div>
-            <a href="#">Events</a>
+            <Link style={{textDecoration:"none"}} to="/events">Events</Link>
           </div>
           <div>
-            <a href="">Play & WIN</a>
+            <Link style={{textDecoration:"none"}} to="/play">Play & Win</Link>
           </div>
           <div>
-            <a href="#">SPORTS</a>
+            <Link style={{textDecoration:"none"}} to="/sports">Sports</Link>
           </div>
           <div>
-            <a href="#">ACTIVITIES</a>
+            <Link style={{textDecoration:"none"}}>Activities</Link>
           </div>
         </article>
-        <artice class="ar4">
+        <article class="ar4">
           <div>
-            <a href="#">LISTYOURACHIEVEMNT</a>
+            <Link style={{textDecoration:"none"}}>Listyourachivement</Link>
           </div>
           <div>
-            <a href="#">COMPETITION</a>
+            <Link style={{textDecoration:"none"}}>Compition</Link>
           </div>
           <div>
-            <a href="#">SIGNUP</a>
+            <Link style={{textDecoration:"none"}} to="/signup">Signup</Link>
           </div>
+
           {/* <div><a href="#">GIFTARDS</a></div> */}
-        </artice>
+        </article>
       </section>
       {/* ===============================third navvv============== */}
       <section id="thirdnav">
@@ -55,82 +56,10 @@ function Layout() {
         </article>
       </section>
 
-      {/* ==hero section============== */}
-      <section id="hero">
-        <article>
-          <div>
-            <img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c58ca09cfed2280f16c31d_Asset%20Right.svg"></img>
-          </div>
-        </article>
-        <article class="texts">
-          <div class="h1">
-            <h1>Introducing Instructional suite </h1>
-          </div>
+      <div>
+        <Outlet />
+      </div>
 
-          <div class="h2">
-            <h1>"I had no idea quizizz</h1>
-          </div>
-
-          <div class="h3">
-            <h1>could do that"</h1>
-          </div>
-          <div class="h4">
-            <h1>- Almost everybody</h1>
-          </div>
-          <hr class="line"></hr>
-
-          <div class="h4">
-            <h1>
-              Create and deliver bell-to-bell curriculum<br></br>
-              resources that meet the needs of every student.
-            </h1>
-          </div>
-        </article>
-
-        <article class="button">
-          <div class="btn1">
-            teachers<br></br>
-            Sign Up For Free
-          </div>
-          <div class="btn2">
-            Admins <br></br>
-            Learn More
-          </div>
-        </article>
-
-        <article class="heroimg">
-          <div>
-            <img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5e7b26e6c5e64cfe92_Logo%201.webp"></img>
-          </div>
-          <div>
-            <img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5e682dcf3e2de72099_Logo%202.webp"></img>
-          </div>
-          <div>
-            <img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5e7a159d9f46242e32_Logo%203.webp"></img>
-          </div>
-          <div>
-            <img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5d2ca69d3901188708_Logo%204.webp"></img>
-          </div>
-          <div>
-            <img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5d83705ec21d936d43_Logo%205.webp"></img>
-          </div>
-          <div>
-            <img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/66c6ab5d2f95fc561a3ccd53_Logo%206.webp"></img>
-          </div>
-          <div>
-            <img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/676276645873b2dbb8eb7865_Instructure%20Research%20Team%20-%20ESSA%20Level%20IV%20Evidence%20-%202024%20-%202024-11-22.webp"></img>
-          </div>
-        </article>
-        <article class="texts1">
-          <div class="t1">
-            Trusted by teachers in 90% of U.S. Schools and 150+ countries.
-          </div>
-          <div class="t2">
-            Now we support every part of your lesson.<br></br>
-            Here’s how it works
-          </div>
-        </article>
-      </section>
       <section id="footer">
         <article class="f">
           <div>
@@ -201,16 +130,15 @@ function Layout() {
           </div>
         </article>
         <article class="f3">
-          <div class="fi"><img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/60aca2b71ab9a563ffecf204_google%20play.webp"></img></div>
-          <div class="fi1"><img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/60aca2b71ab9a50fe9ecf205_apple%20app%20store.webp"></img></div>
+          <div class="fi">
+            <img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/60aca2b71ab9a563ffecf204_google%20play.webp"></img>
+          </div>
+          <div class="fi1">
+            <img src="https://cdn.prod.website-files.com/60aca2b71ab9a5e4ececf1cf/60aca2b71ab9a50fe9ecf205_apple%20app%20store.webp"></img>
+          </div>
         </article>
-       
       </section>
-       <section>
-        <article>
-          <div><video src="https://cf.quizizz.com/videos/webflow/Intro_1K_Updated.mp4"></video></div>
-        </article>
-       </section>
+    
     </>
   );
 }
